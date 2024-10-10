@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动漫虚拟形象选择平台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 数字虚拟人选择界面 -->
+  <header>
+    <h1>选择你心仪的动漫虚拟人物</h1>
+    <nav>
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">虚拟形象库</a></li>
+        <li><a href="#">工作台</a></li>
+        <li><a href="#">项目管理</a></li>
+        <li><a href="#">角色定制</a></li>
+        <li><a href="#">声音定制</a></li>
+        <li><a href="#">产品定制</a></li>
+        <li><a href="#">数字互动</a></li>
+        <li><a href="#">数字视频</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 虚拟形象选择区域 -->
+  <div id="virtual-human-selection">
+    <h2>选择动漫虚拟人和声音风格</h2>
+    <div class="character-selection">
+      <div class="character-card">
+        <img src="character1.png" alt="动漫角色1">
+        <p>动漫角色1</p>
+        <button class="customize-button">定制角色</button>
+      </div>
+      <div class="character-card">
+        <img src="character2.png" alt="动漫角色2">
+        <p>动漫角色2</p>
+        <button class="customize-button">定制角色</button>
+      </div>
+      <!-- 添加更多角色卡片 -->
+    </div>
+  </div>
+
+  <!-- 动漫角色定制工作台 -->
+  <div id="character-customization">
+    <h2>角色定制</h2>
+    <div class="customization-settings">
+      <label for="character-name">名称：</label>
+      <input type="text" id="character-name" name="character-name" placeholder="输入角色名称">
+
+      <label for="character-voice">声音风格：</label>
+      <select id="character-voice" name="character-voice">
+        <option value="cute">可爱型</option>
+        <option value="serious">严肃型</option>
+        <option value="lively">活泼型</option>
+        <option value="deep">深沉型</option>
+        <option value="soft">温柔型</option>
+        <!-- 更多声音选择 -->
+      </select>
+
+      <label for="character-outfit">服装风格：</label>
+      <select id="character-outfit" name="character-outfit">
+        <option value="casual">休闲风</option>
+        <option value="formal">正式风</option>
+        <option value="fantasy">奇幻风</option>
+        <option value="sporty">运动风</option>
+        <!-- 更多服装选择 -->
+      </select>
+    </div>
+  </div>
+
+  <!-- 产品定制 -->
+  <div id="product-customization">
+    <h2>产品定制</h2>
+    <div class="product-settings">
+      <label for="product-type">产品类型：</label>
+      <select id="product-type" name="product-type">
+        <option value="figure">手办</option>
+        <option value="poster">海报</option>
+        <option value="merch">周边</option>
+        <option value="clothing">服饰</option>
+        <option value="accessories">配件</option>
+        <!-- 更多产品选择 -->
+      </select>
+
+      <label for="product-size">产品尺寸：</label>
+      <input type="text" id="product-size" name="product-size" placeholder="输入产品尺寸">
+    </div>
+  </div>
+
+  <!-- 数字互动与数字视频 -->
+  <div id="digital-interaction">
+    <h2>数字互动与视频</h2>
+    <div class="interaction-options">
+      <button id="create-video">生成互动视频</button>
+      <button id="start-interaction">开始数字互动</button>
+      <label for="interaction-type">互动类型：</label>
+      <select id="interaction-type" name="interaction-type">
+        <option value="live">直播互动</option>
+        <option value="pre-recorded">预录视频</option>
+        <option value="chat">文字互动</option>
+        <!-- 更多互动选择 -->
+      </select>
+    </div>
+  </div>
+
+  <!-- 生成二维码与分享 -->
+  <div id="share-character">
+    <h2>生成并分享你的虚拟人</h2>
+    <button id="generate-qr">生成二维码</button>
+    <div id="qr-code"></div>
+  </div>
+
+  <script src="animeVirtualCharacter.js"></script>
+</body>
+</html>
